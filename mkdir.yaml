@@ -1,0 +1,8 @@
+---
+- name: Create Demo folder
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Create ansible directory
+      command: mkdir -p /data/awx/demo/project
